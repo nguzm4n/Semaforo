@@ -1,0 +1,57 @@
+.red {
+    background-color: red;
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    margin: auto;
+    padding-top: 10px;
+    
+
+}
+.yellow{
+    background-color: yellow;
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 5px;
+    
+}
+.green {
+    background-color: green;
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.redOn {
+    background-color: red;
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    margin: auto;
+    box-shadow: 1px 1px 100px 30px hsl(60, 81%, 60%);
+    
+}
+
+.yellowOn {
+    background-color: yellow;
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 5px;
+    box-shadow: 1px 1px 100px 30px hsl(60, 81%, 60%);
+}
+
+.greenOn {
+    background-color: green;
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 5px;
+    box-shadow: 1px 1px 100px 30px hsl(60, 81%, 60%);
+}

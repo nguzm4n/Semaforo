@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Luz from './Componentes/luz.jsx'
+import { useState } from 'react'
 
 function App() {
+
+  const [color, setColor] = useState('')
+
+  const colorChange = (color) => {
+    setColor(color)
+  }
+  
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='contenedor-semaforo'>
+        <div className='divTop'></div>
+        <div className='container'>
+          <Luz 
+          className={'red ' + (color == 'red' ? 'redOn' : '')  }
+          colorChange = {colorChange} 
+          color={"red"} />
+           <Luz 
+          className={'yellow ' + (color == 'yellow' ? 'yellowOn' : '')  }
+          colorChange = {colorChange} 
+          color={"yellow"} />
+           <Luz 
+          className={'green ' + (color == 'green' ? 'greenOn' : '')  }
+          colorChange ={colorChange} 
+          color={"green"} />
+        </div>
+      </div>
     </div>
   );
 }
